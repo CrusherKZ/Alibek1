@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Страница</title>
+    <title>Alibek.kz</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- шаблон для сайта 1 (ставит меню ровно) -->
+    <link rel="stylesheet" href="libs/bootstrap-reboot.min.css" />
+    <!-- шаблон для сайта 2 (выравнивает ссылки и логотип) -->
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css" />
+    <!-- связь с css -->
     <link rel="stylesheet" href="1.css" />
-    <title>Document</title>
   </head>
   <body>
-    <h1>Khakim</h1>
-    <p>Alibek Khakim - программист</p>
+    <!-- Шапка/меню сайта -->
+    <nav class="navbar">
+      <!-- расположение ссылок и текста -->
+      <div class="container">
+        <!-- логотип -->
+        <a href="#" class="navbar-brand">Alibek</a>
+        <!-- некий "кейс " для более удобного использования-->
+        <div class="navbar-wrap">
+          <!-- список ссылок -->
+          <ul class="navbar-menu">
+            <li><a href="#">Личная информация</a></li>
+            <li><a href="#">Навыки</a></li>
+            <li><a href="#">Образование</a></li>
+            <li><a href="#">Награды</a></li>
+          </ul>
+          <!-- обратная связь -->
+          <a href="#" class="callback">Обратный связь</a>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>

@@ -1,0 +1,92 @@
+/* фон, фон на весь экран, позиционирование элмента
+шрифт, размер шрифта, допустимая высота, цвет, минимальная ширина,
+  скрытие выходящих за пределы элементов, высота*/
+body {
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipMhm-6E-cA43cKrb1D17qmywjxyry-XTiASoHrH=s1360-w1360-h1020);
+    background-size: cover;
+    position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+/* ширина, высота, прозрачность и тень */
+  .navbar {
+	width: 100%;
+	height: 70px;
+    background-color: rgba(255, 255, 255, 0.685);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  /* наследование высоты от меню */
+  .navbar .container {
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    
+}
+/* Убрал поддчеркивание и отступы */
+  .navbar-menu {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+  }
+  /* расположил ссылки в линию */
+  .navbar-menu li {
+	display: inline-block;
+  }
+  /* расположение по линии, цвет, размер текста, жирный шрифт, прозрачность, отступ, переход */
+  .navbar-menu li a {
+	display: inline-block;
+	color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 800;
+	opacity: 0.6;
+	text-decoration: none;
+	padding: 10px;
+	transition: all 0.2s ease-in-out;
+  }
+  /* при наводке текст становится четким */
+  .navbar-menu li a:hover {
+	opacity: 1;
+  }
+  /* правильное расположение элеметов */
+  .navbar-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+  }
+  /* отступ, цвет, прозрачность, радиус, тень и переход */
+  .callback {
+	margin-left: 30px;
+	padding: 10px;
+	background-color: rgb(0, 110, 255);
+	border-radius: 70px;
+	color: white;
+	text-decoration: none;
+	box-shadow: 0 4px 6px rgba(255, 127, 80, 0.2);
+	transition: all 0.1s ease-out;
+  }
+  /* "свчение при наводке" */
+  .callback:hover {
+	transform: scale(1.04);
+	color: white;
+	box-shadow: 0 9px 9px rgb(109, 171, 253);
+  }
+  /* жирный текст, размер, переход */
+  .navbar-brand {
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+	color: black;
+	transition: all 0.2s ease-in-out;
+  }
+  /* меняет цвет при наводке */
+  .navbar-brand:hover {
+	color: rgb(0, 110, 255);
+  }
+  
+
+
