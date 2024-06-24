@@ -1,16 +1,20 @@
-function onEntry(entry) {
-    entry.forEach(change => {
-      if (change.isIntersecting) {
-       change.target.classList.add('element-show');
-      }
-    });
-  }
-  
-  let options = {
-    threshold: [0.5] };
-  let observer = new IntersectionObserver(onEntry, options);
-  let elements = document.querySelectorAll('.element-animation');
-  
-  for (let elm of elements) {
-    observer.observe(elm);
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  // Плавный скроллинг при клике на якорные ссылки
+  document.querySelectorAll('.navbar-menu a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+
+  // Обработка отправки формы
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Спасибо за ваше сообщение!');
+      form.reset();
+  });
+});

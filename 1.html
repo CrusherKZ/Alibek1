@@ -1,48 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alibek.kz</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- шаблон для сайта 1 (ставит меню ровно) -->
+     <!-- шаблон для сайта 1 (ставит меню ровно) -->
     <link rel="stylesheet" href="libs/bootstrap-reboot.min.css" />
     <!-- шаблон для сайта 2 (выравнивает ссылки и логотип) -->
     <link rel="stylesheet" href="libs/bootstrap-grid.min.css" />
-    <!-- связь с css -->
-    <link rel="stylesheet" href="1.css" />
-    <!-- связь с JS -->
-    <link rel="stylesheet" href="1.JS" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
     <!-- Шапка/меню сайта -->
     <nav class="navbar">
-      <!-- расположение ссылок и текста -->
-      <div class="container">
-        <!-- логотив -->
-        <a href="#" class="navbar-brand"><img src="img\logo.jpeg" alt="logo" /> Alibek</a>
-        <!-- некий "кейс" для более удобного использования-->
-        <div class="navbar-wrap">
-          <!-- список ссылок -->
-          <ul class="navbar-menu">
-            <li><a href="#">Личная информация</a></li>
-            <li><a href="#">Навыки</a></li>
-            <li><a href="#">Образование</a></li>
-            <li><a href="#">Награды</a></li>
-          </ul>
-          <!-- обратная связь -->
-          <a href="#" class="callback">Обратный связь</a>
+        <div class="container">
+            <a href="#home" class="navbar-logo"><img src="img/logo.jpeg" alt="logo"> Alibek</a>
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#personal-info">Личная информация</a></li>
+                    <li><a href="#education">Образование</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#awards">Награды</a></li>
+                    <li><a href="#contact">Обратная связь</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-    <div class="page1">
-      <div class="info">
-      <p>Студент AITU - College, страстно увлеченный
-      информационными технологиями   </p>
-      <p>и программированием. Ищу возможности для стажировки, чтобы применить</p>
-      <p>теоретические знания на практике и развить свои навыки в разработке</p>
-      <p>программного обеспечения.</p></div>
-      <div class="photo"><img src="img\alibek.jpg" alt="photo"></div>
-    </div>
-    <div class="block"></div>
-  </body>
+    <!-- Основные секции сайта -->
+    <section id="home" class="section home">
+        <div class="content">
+            <h1>Добро пожаловать на мой сайт</h1>
+            <p>Меня зовут Алибек. Я студент AITU - College, стремлюсь к развитию в области информационных технологий и программирования. Ищу возможности для стажировки, чтобы применить теоретические знания на практике и развить свои навыки в разработке программного обеспечения.</p>
+        </div>
+    </section>
+    <section id="personal-info" class="section personal-info">
+        <h2>Личная информация</h2>
+        <div class="content">
+            <div class="info">
+                <p>Имя: Алибек Хаким </p>
+                <p>Дата рождения: 2007г.</p>
+                <p>Национальность: казах</p>
+                <p>Место проживания: Астана, Казахстан</p>
+                <p>Языки: казахский(свободно), русский(свободно), английский(выше-среднего)</p>
+                <p>Хобби: плавание, тренажерный зал, изучение языков</p>
+            </div>
+            <div class="photo">
+                <img src="img/alibek.jpg" alt="Alibek">
+            </div>
+        </div>
+    </section>
+    <section id="education" class="section education">
+        <h2>Образование</h2>
+        <div class="content">
+            <p>Средняя-школа №19 (2013-2014)</p>
+            <p>Школа-лицей No53 им Б. Момышулы(2014-2023)</p>
+            <p>IT-Step Academy (2020-2023)</p>
+            <p>AITU - College(2023-настоящее)</p>
+        </div>
+    </section>
+    <section id="skills" class="section skills">
+        <h2>Навыки</h2>
+        <div class="content">
+                <img src="img/skills.jpg" alt="skills">
+        </div>
+    </section>
+    <section id="awards" class="section awards">
+        <h2>Награды</h2>
+        <div class="content">
+            <img src="img/diplom1.jpg" alt="diplom1">
+            <img src="img/diplom2.jpg" alt="diplom2">
+            <img src="img/diplom3.jpg" alt="diplom3">
+        </div>
+    </section>
+    <section id="contact" class="section contact">
+        <h2>Обратная связь</h2>
+        <div class="content">
+            <form id="contact-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Alibek.kz. Все права защищены.</p>
+    </footer>
+    <script src="1.js"></script>
+</body>
 </html>

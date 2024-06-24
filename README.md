@@ -1,1 +1,1 @@
-Alibek1 made by Khakim Alibek
+Alibek.kz made by Alibek Khakim
